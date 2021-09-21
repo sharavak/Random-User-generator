@@ -19,11 +19,11 @@ const data = async () => {
         const parsedResult = await datas.json();
         console.log(parsedResult);
         if (parsedResult.results[0].gender === 'female') {
-            image.src = `${Images}/${womanImage[Math.floor(Math.random() * womanImage.length)]}`;
+            image.src =`Images/${womanImage[Math.floor(Math.random() * womanImage.length)]}`;
             updateInformation(parsedResult);
         }
         else {
-            image.src = `${Images}/${manImage[Math.floor(Math.random() * womanImage.length)]}`;
+            image.src =`Images/${manImage[Math.floor(Math.random() * womanImage.length)]}`;
             updateInformation(parsedResult)
         }
     }
