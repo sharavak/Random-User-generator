@@ -5,14 +5,14 @@ const content = document.querySelector('.content');
 let result = ''
 const manImage = ['4043260-avatar-male-man-portrait_113269.png', 'iconfinder-3-avatar-2754579_120516.png', 'iconfinder-10-avatar-2754575_120521.png', 'iconfinder-8-avatar-2754583_120515.png'];
 const womanImage = ['german-pngrepo-com (1).png','tourist.png','4043247-1-avatar-female-portrait-woman_113261.png','4043261-artist-avatar-marilyn-monroe_113252.png'];
+let next = document.querySelector('button');
+let image = document.querySelector('img');
+
 let namePer = [];
 let address = [];
 let email = [];
 let phoneNo = [];
-let next = document.querySelector('button');
 
-let counter = 0;
-let image = document.querySelector('img');
 const data = async () => {
     try {
         const datas = await fetch('https://randomuser.me/api/');
@@ -44,6 +44,7 @@ function updateInformation(parsedResult) {
     address.push(parsedResult.results[0].location.state);
     address.push(parsedResult.results[0].location.country);
 }
+
 const events=async()=> {
     await data();
     list[0].addEventListener('mouseenter', function (result) {
@@ -86,6 +87,7 @@ const events=async()=> {
 
 }
 events()
+
 const nextE = async () => {
     content.style.animation = '';
     namePer = [];
@@ -93,7 +95,6 @@ const nextE = async () => {
     email = [];
     phoneNo = [];
     await events();
-    
     infor.innerHTML = `My name is <p>${namePer.slice(1,).join(' ')}</p>`;
     content.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
     content.style.animation = 'col 1.5s ease-in-out forwards';
