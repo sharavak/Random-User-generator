@@ -8,6 +8,7 @@ body{
     align-items: center;
     background-color: #1e2829;
 }
+
 .content{
     width: 100%;
     max-width: 30rem;
@@ -30,17 +31,18 @@ body{
     position: relative;
 
 }
+
 .content .imgHeader img{
     max-width: 100%;
     height: auto;
     border-radius: 50%;
-    box-shadow: 1px 1px 10px 1px powderblue;
     position: absolute;
-    }
+}
 
 .content .footerInfor ul li{
     display: inline-block;
 }
+
 .content .infor{
     width: 100%;
     text-align: center;
@@ -50,7 +52,6 @@ body{
     font-weight:lighter;
     margin-top: 5px;
     color: #cfe9df;
-    
 }
 
 .content .footerInfor ul{
@@ -60,6 +61,7 @@ body{
     justify-content: space-evenly;
     margin:0px 0px 10px 0px
 }
+
 hr{
     margin:0px;
     border:1px solid rgb(199, 195, 195);
@@ -85,11 +87,13 @@ button{
     color: white;
     border-radius: 5px;
 }
+
 button:hover{
     background-color: rgb(4, 82, 69);
     color: rgb(235, 255, 59);
     transition: 2s ease;
 }
+
 @keyframes col {
     0%{
         opacity: 0.2;
