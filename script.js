@@ -23,7 +23,7 @@ const data = async () => {
             updateInformation(parsedResult);
         }
         else {
-            image.src = `${Imagse}/${womanImage[Math.floor(Math.random() * womanImage.length)]}`;
+            image.src = `${Images}/${manImage[Math.floor(Math.random() * womanImage.length)]}`;
             updateInformation(parsedResult)
         }
     }
