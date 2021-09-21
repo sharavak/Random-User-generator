@@ -65,7 +65,7 @@ const events=async()=> {
 
     })
     list[2].addEventListener('mouseenter', function () {
-        infor.innerHTML = `My Phone No is <p>${phoneNo.join('')}</p>`;
+        infor.innerHTML = `My Phone Number is <p>${phoneNo.join('')}</p>`;
         list[2].style.transform = 'translateY(10px)';
         list[2].style.transition = '2s transform ease';
         list[1].style.transform = 'translateY(-5px)';
