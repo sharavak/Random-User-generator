@@ -2,12 +2,12 @@ const infor = document.querySelector('.infor');
 const list = document.querySelectorAll('li');
 const colors = ['#19334d', '#52b69a', '#0d47a1', 'bcfb88', 'e9edc9', '#22333b', '#0c0b10', '#010017', '#115d6c', '#000624', '#003366', '#101b41', '#004946', '#001f3d', '#332d2d'];
 const content = document.querySelector('.content');
-let result = ''
-const manImage = ['4043260-avatar-male-man-portrait_113269.png', 'iconfinder-3-avatar-2754579_120516.png', 'iconfinder-10-avatar-2754575_120521.png', 'iconfinder-8-avatar-2754583_120515.png'];
-const womanImage = ['german-pngrepo-com (1).png','tourist.png','4043247-1-avatar-female-portrait-woman_113261.png','4043261-artist-avatar-marilyn-monroe_113252.png'];
 let next = document.querySelector('button');
 let image = document.querySelector('img');
 
+let result = '';
+const manImage = ['4043260-avatar-male-man-portrait_113269.png', 'iconfinder-3-avatar-2754579_120516.png', 'iconfinder-10-avatar-2754575_120521.png', 'iconfinder-8-avatar-2754583_120515.png'];
+const womanImage = ['german-pngrepo-com (1).png','tourist.png','4043247-1-avatar-female-portrait-woman_113261.png','4043261-artist-avatar-marilyn-monroe_113252.png'];
 let namePer = [];
 let address = [];
 let email = [];
